@@ -5,6 +5,9 @@
         <pathelement location="${lib.dir}/ant-junit4.jar"/>
         <pathelement location="${lib.dir}/ant-junit"/>
     </path>
+    <path id="classpath.junittest">
+    <pathelement location="/usr/share/java/junit4.jar" />
+    </path>
 
     <target name="clean">
         <delete dir="build"/>
@@ -41,6 +44,7 @@
     <target name="junit" depends="tjar">
         <junit printsummary="yes">
         <classpath refid="classpath" />
+        <classpath refid="classpath.junittest" />
         <classpath location="test"/>
         <test name="hellotest" haltonfailure="no" todir="test/results">
         <formatter type="plain"/>
