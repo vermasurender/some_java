@@ -4,7 +4,6 @@
     <path id="classpath">
         <pathelement location="${lib.dir}/ant-junit4.jar"/>
         <pathelement location="${lib.dir}/ant-junit"/>
-        <pathelement location="/usr/share/java/junit4.jar"/>
     </path>
 
     <target name="clean">
