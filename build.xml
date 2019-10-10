@@ -6,7 +6,7 @@
         <pathelement location="${lib.dir}/ant-junit"/>
     </path>
     <path id="classpath.junittest">
-    <pathelement location="/usr/share/java/junit4.jar" />
+    <pathelement location="/usr/share/java/junit4-4.12.jar" />
     </path>
 
     <target name="clean">
